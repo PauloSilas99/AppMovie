@@ -1,0 +1,10 @@
+.AreaScroll {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+.AreaScroll img{
+    width: 42px;
+}
