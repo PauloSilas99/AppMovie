@@ -17,22 +17,6 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
@@ -58,7 +42,7 @@
   color: white;
 }
 .pagProx{
-  /* background: #444141; */
+
   background: rgb(2, 49, 68);
   color: white;
 }
@@ -169,4 +153,59 @@
 
 .colorTema{
   color: rgb(4, 80, 131)
+}
+
+@media(max-width:585px){
+  .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+  }
+  .pagination span{
+    color: black;
+  }
+  .formInput input{
+    background: rgb(2, 55, 90);
+  }
+  .grupMobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .LinkMobile{
+    display: flex;
+    background: #f1f1f1;
+    border: #646CFF 1px solid;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .LinkMobile a{
+    color: #646CFF;
+  }
+  .linkHome{
+    display: none;
+  }
+  .detalhesFilme{
+    display: flex;
+    flex-direction: column;
+  }
+  .descFilme{
+    color: rgb(2, 55, 90);
+    margin-top: -40px;
+  }
+  .DetIcons{
+    background: rgb(2, 55, 90);
+    border-radius: 10px;
+  }
+  .iconesDiv{
+    font-size: 18px;
+  }
+  .tituloDesc{
+    color: rgb(2, 55, 90);
+  }
 }

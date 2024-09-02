@@ -25,13 +25,13 @@ function MovieDetail() {
   }
 
   return (
-    <div>
+    <div className='grupMobile'>
       <h2 className="tituloDesc">{filme.title}</h2>
 
-        <Link to="/" className="linkHome">
-          <img src={left} alt="home" />
-          Voltar para a lista
-        </Link>
+      <Link to="/" className="linkHome">
+        <img src={left} alt="home" />
+        Voltar para a lista
+      </Link>
       
       <div className="detalhesFilme">
         <div className="divImg">
@@ -44,7 +44,7 @@ function MovieDetail() {
             <p>{filme.overview}</p>
           </div>
 
-          <div>
+          <div className='DetIcons'>
             <div className="iconesDiv">
               <p><strong>Data de lançamento: {new Date(filme.release_date).toLocaleDateString('pt-br')}</strong></p>
               <img src={data} alt="data" />
@@ -59,12 +59,11 @@ function MovieDetail() {
               <p><strong>Nota: {filme.vote_average.toFixed(1)}</strong></p>
               <img src={estrelaBranca} alt="estrelaBranca" />
             </div>
-
-            <div className="LinkMobile">
+          </div>
+          <div className="LinkMobile">
               <img src={left} alt="home" />
               <Link to="/">Voltar para a lista</Link>
             </div>
-          </div>
         </div>
       </div>
     </div>
